@@ -1,4 +1,0 @@
-#!/bin/bash
-git add .
-echo $(vim commit_message) | git commit -m
-rm commit_message
