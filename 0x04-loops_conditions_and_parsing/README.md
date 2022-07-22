@@ -8,7 +8,7 @@
 * [``if``](https://ss64.com/bash/if.html)
 
 ## Objectives
-* How to create SSH keys
+* How to create SSH keys [here](https://askubuntu.com/questions/61557/how-do-i-set-up-ssh-authentication-keys)
 * What is the advantage of using ``#!/usr/bin/env`` over ``#!/bin/bash``
 * How to use ``while``, ``until`` and ``for`` loops
 * How to use ``if``, ``else`` and ``case`` condition statements
