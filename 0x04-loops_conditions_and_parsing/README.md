@@ -1,11 +1,11 @@
 # Loops, conditions and parsing
 **man or help**
-* env
-* cut
-* for
-* while
-* until
-* if
+* ``env``
+* ``cut``
+* ``for``
+* ``while``
+* ``until``
+* ``if``
 
 ## Objectives
 * How to create SSH keys
@@ -16,8 +16,9 @@
 * What are files and other comparison operators and how to use them
 
 ### Content
-* 0-RSA_public_key.pub - RSA public key
+* [0-RSA_public_key.pub](/0x04-loops_conditions_parsing/0-RSA_public_key.pub) - RSA public key
 * 1-for_best_school - Script displays "Best School" 10 times using for loop
 * 2-while_best_school - Script displays "Best School" 10 times using while loop
 * 3-until_best_school - Script displays "Best School" 10 times using until loop
-* 4-if_9_say_hi - Script displays "Best School" 10 times but displays "Hi" on a new line\n after the 9th "Best School"
+* 4-if_9_say_hi - Script displays "Best School" 10 times but displays "Hi" on a new line  
+after the 9th "Best School"
