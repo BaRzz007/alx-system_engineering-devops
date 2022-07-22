@@ -1,6 +1,6 @@
 # Loops, conditions and parsing
 **man or help**
-* ``env``
+* ``[env](https://www.man7.org/linux/man-pages/man1/env.1.html)``
 * ``cut``
 * ``for``
 * ``while``
