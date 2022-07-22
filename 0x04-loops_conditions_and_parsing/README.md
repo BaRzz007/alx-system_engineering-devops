@@ -3,7 +3,7 @@
 * [``env``](https://www.man7.org/linux/man-pages/man1/env.1.html)
 * [``cut``](https://man7.org/linux/man-pages/man1/cut.1.html)
 * [``for``](https://ss64.com/bash/for.html)
-* [``while``](https://www.man7.org/linux/man-pages/man1/bash.1.html)
+* [``while``](https://linuxcommand.org/lc3_man_pages/whileh.html)
 * [``until``](https://ss64.com/bash/until.html)
 * [``if``](https://ss64.com/bash/if.html)
 
