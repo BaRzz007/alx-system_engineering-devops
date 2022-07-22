@@ -12,3 +12,11 @@
 * How to kill a process
 * What is a signal
 * What are the 2 signals that cannot be ignored
+
+**man or help**
+* ps
+* pgrep
+* pkill
+* kill
+* exit
+* trap
