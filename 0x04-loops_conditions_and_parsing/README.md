@@ -1,11 +1,11 @@
 # Loops, conditions and parsing
 **man or help**
 * [``env``](https://www.man7.org/linux/man-pages/man1/env.1.html)
-* ``cut``
-* ``for``
-* ``while``
-* ``until``
-* ``if``
+* [``cut``](https://man7.org/linux/man-pages/man1/cut.1.html)
+* [``for``](https://man7.org/linux/man-pages/man1/man.1.html)
+* [``while``](https://www.man7.org/linux/man-pages/man1/bash.1.html)
+* [``until``](https://ss64.com/bash/until.html)
+* [``if``](https://ss64.com/bash/if.html)
 
 ## Objectives
 * How to create SSH keys
