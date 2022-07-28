@@ -1,8 +1,8 @@
 # Network basics 0
 
 **man or help**
-* [``netstat``]()
-* [``ping``]()
+* [``netstat``](https://linux.die.net/man/8/netstat)
+* [``ping``](https://linux.die.net/man/8/ping)
 
 ## Objectives
 
