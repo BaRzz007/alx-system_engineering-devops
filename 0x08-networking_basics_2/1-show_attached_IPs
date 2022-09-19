@@ -2,7 +2,8 @@
 # Script lists all active IPs on the machine executing it
 
 addresses=$(hostname -I)
-addresses=(${addresses//" "/ })
+IFS=" " read -r -a addresses <<< "$addresses"
+# addresses=(${addresses//" "/})
 
 for ip in "${addresses[@]}"
 do
