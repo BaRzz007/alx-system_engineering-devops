@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Script lists all active IPs on the machine executing it
+
+addresses=$(hostname -I)
+addresses=(${addresses//" "/ })
+
+for ip in "${addresses[@]}"
+do
+	echo "$ip"
+done
