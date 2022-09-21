@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Script gets apache service running on a docker container
+
+sudo service apache2 start
