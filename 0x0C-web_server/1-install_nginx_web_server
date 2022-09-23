@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Script installs nginx when executed and opens port 80
 
+sudo apt-get -y update
 sudo apt-get install -y nginx
 sudo service nginx start
 sudo chown -R "$USER:$USER" /var/www/html
