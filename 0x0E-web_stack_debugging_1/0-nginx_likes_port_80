@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Script installs and run Nginx listening on port 80
+# of all the servers ipv4 IPs
+
+apt-get -y update
+apt-get -y install nginx
+apt-get -y install curl
+apt-get -y install net-tools
+service nginx start
