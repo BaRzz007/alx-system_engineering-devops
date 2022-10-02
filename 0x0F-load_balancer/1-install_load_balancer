@@ -2,5 +2,5 @@
 # Script install and configure Haproxy load balancer
 sudo apt-get update && sudo apt-get -y upgrade
 sudo apt -y install haproxy
-echo 'backend web-servers\n\tserver web01 44.192.86.1:80\n\tserver web02 100.24.210.215:80' | sudo tee /etc/haproxy/haproxy.cfg
+echo 'backend web-servers\n\tserver web-01 44.192.86.1:80\n\tserver web-02 100.24.210.215:80' | sudo tee /etc/haproxy/haproxy.cfg
 echo 'frontend\n\tbind *:80\n\tdefault_backend web-servers' | sudo tee /etc/haproxy/haproxy.cfg
