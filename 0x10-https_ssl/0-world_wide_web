@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# Script displays information about subdomains
+
+RECORD_TYPE=
+IP=
+func() {
+	DOMAIN="$1"
+	SUBDOMAIN="$2"
+
+	RECORD_TYPE="$(dig "$SUBDOMAIN"."$DOMAIN" | grep -A1 "ANSWER SECTION" | tail -n 1 | awk '{print $4}')"
+	IP="$(dig "$SUBDOMAIN"."$DOMAIN" | grep -A1 "ANSWER SECTION" | tail -n 1 | awk '{print $NF}')"
+}
+
+ARRAY=("www" "web-01" "web-02" "lb-01")
+if [ "$2" ]
+then
+	func "$1" "$2"
+	echo "The subdomain $2 is a $RECORD_TYPE and points to $IP"
+else
+	for i in ${ARRAY[@]}
+	do
+		func "$1" "$i"
+		echo "The subdomain $i is a $RECORD_TYPE and points to $IP"
+	done
+fi
