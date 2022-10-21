@@ -15,11 +15,11 @@ ARRAY=("www" "web-01" "web-02" "lb-01")
 if [ "$2" ]
 then
 	func "$1" "$2"
-	echo "The subdomain $2 is a $RECORD_TYPE and points to $IP"
+	echo "The subdomain $2 is a $RECORD_TYPE record end points to $IP"
 else
 	for i in ${ARRAY[@]}
 	do
 		func "$1" "$i"
-		echo "The subdomain $i is a $RECORD_TYPE and points to $IP"
+		echo "The subdomain $i is a $RECORD_TYPE record and points to $IP"
 	done
 fi
