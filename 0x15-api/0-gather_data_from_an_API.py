@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """ Gather data from an API """
 
-import sys
 import requests
+import sys
+
 if __name__ == "__main__":
     u_id = sys.argv[1]
     url = 'https://jsonplaceholder.typicode.com/'
