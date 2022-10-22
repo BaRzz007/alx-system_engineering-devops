@@ -13,7 +13,7 @@ if __name__ == "__main__":
         todos = requests.get('{}todos'.format(url)).json()
     except Exception as e:
         print('Not successful')
-    
+    count = 0
     for user in users:
         if user.get('id') == int(u_id):
             with open('USER_ID.csv', 'w', encoding='utf-8') as f:
@@ -24,3 +24,4 @@ if __name__ == "__main__":
                             user.get('username'), 
                             todo.get('completed'), 
                             todo.get('title')))
+    f.close()
