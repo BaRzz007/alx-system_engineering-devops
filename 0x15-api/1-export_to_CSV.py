@@ -20,8 +20,8 @@ if __name__ == "__main__":
                 for todo in todos:
                     if todo.get('userId') == int(u_id):
                         f.write('"{}", "{}", "{}", "{}"\n'.format(
-                            user.get('id'), 
-                            user.get('username'), 
-                            todo.get('completed'), 
+                            user.get('id'),
+                            user.get('username'),
+                            todo.get('completed'),
                             todo.get('title')))
     f.close()
