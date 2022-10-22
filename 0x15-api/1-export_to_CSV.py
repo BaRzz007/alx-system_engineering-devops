@@ -16,7 +16,7 @@ if __name__ == "__main__":
     count = 0
     for user in users:
         if user.get('id') == int(u_id):
-            with open('USER_ID.csv', 'w', encoding='utf-8') as f:
+            with open(f'{u_id}.csv', 'w', encoding='utf-8') as f:
                 for todo in todos:
                     if todo.get('userId') == int(u_id):
                         f.write('"{}", "{}", "{}", "{}"\n'.format(
