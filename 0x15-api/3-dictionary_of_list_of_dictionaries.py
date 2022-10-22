@@ -14,20 +14,22 @@ def to_json():
     except Exception as e:
         print('Not successful')
 
-    task_list = []
+    users_dict = {}
 
     for user in users:
+        task_list = []
         for todo in todos:
             if todo.get('userId') == user.get('id'):
                 task = {"username": user.get('username'),
                         "task": todo.get('title'),
                         "completed": todo.get('completed')}
                 task_list.append(task)
-        user_dict = {user.get('id'): task_list}
+
+        users_dict[user.get('id')] = task_list
 
     _file = 'todo_all_employees.json'
     with open(_file, 'w', encoding='utf-8') as f:
-        json.dump(user_dict, f)
+        json.dump(users_dict, f)
     f.close()
 
 
