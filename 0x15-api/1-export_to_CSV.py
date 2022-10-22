@@ -19,7 +19,7 @@ if __name__ == "__main__":
             with open('{}.csv'.format(u_id), 'w', encoding='utf-8') as f:
                 for todo in todos:
                     if todo.get('userId') == int(u_id):
-                        f.write('"{}", "{}", "{}", "{}"\n'.format(
+                        f.write('"{}","{}","{}","{}"\n'.format(
                             user.get('id'),
                             user.get('username'),
                             todo.get('completed'),
