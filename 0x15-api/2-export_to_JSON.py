@@ -5,6 +5,7 @@ import json
 import requests
 import sys
 
+
 def to_json(u_id):
     url = 'https://jsonplaceholder.typicode.com/'
 
@@ -31,6 +32,7 @@ def to_json(u_id):
     with open(_file, 'w', encoding='utf-8') as f:
         json.dump(user_dict, f)
     f.close()
+
 
 if __name__ == "__main__":
     to_json(sys.argv[1])
