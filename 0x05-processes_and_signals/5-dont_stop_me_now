@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-# Terminates a process
-kill "$(ps aux | pgrep -f ./4-to_infinity_and_beyond)"

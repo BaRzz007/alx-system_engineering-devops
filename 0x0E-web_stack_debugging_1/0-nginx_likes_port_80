@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-# Script installs and run Nginx listening on port 80
-# of all the servers ipv4 IPs
-
-apt-get -y update
-apt-get -y install nginx
-service nginx start
-sed -i 's/8080/80/' /etc/nginx/sites-enabled/default
-service nginx restart

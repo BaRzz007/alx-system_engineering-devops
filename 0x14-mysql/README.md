@@ -1,5 +1,0 @@
-# MySQL
-
-## Learning Objectives
-
-## Resources
