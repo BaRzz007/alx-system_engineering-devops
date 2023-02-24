@@ -3,5 +3,5 @@
 # where only the part of the name after the first dash is displayed
 for each in *
 do
-	echo $each | cut -d '-' -f 2
+	echo "$each" | cut -d '-' -f 2
 done
