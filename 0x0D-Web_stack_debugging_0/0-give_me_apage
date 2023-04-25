@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Debug the machine get apache running and
+#+return 'Hello Holberton' when accessed
+#+using curl on port 80
+
+service apache2 start
