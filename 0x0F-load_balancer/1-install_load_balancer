@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Installs and configure HAproxy on a new ubuntu machine
+
+sudo apt -y update
+sudo apt -y install haproxy
+sudo service haproxy start
+sed -i -e '$a\\nbackend backend-servers\n\tbalance roundrobin\n\tserver web-01 18.206.192.187:80 check\n\tserver web-02 100.26.53.46check\n'  /etc/haproxy/haproxy.cfg
+sed -i -e '$a\\nfrontend http\n\tbind *:80\n\tmode http\n\n\tacl index path_beg \/\n\tdefault_backend backend-servers\n' /etc/haproxy/haproxy.cfg
+sudo service haproxy restart
