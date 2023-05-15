@@ -1,0 +1,5 @@
+sudo ufw default deny incoming
+sudo ufw 22
+sudo ufw 443
+sudo ufw 80
+sudo ufw enable
