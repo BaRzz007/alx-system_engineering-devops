@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Runs nginx as less priviledged user nginx
-passwd -l root
+sed -i -e 's/user www-data;/user nginx;/' /etc/nginx/nginx.conf
+sed -i 's/80/8080/g' /etc/nginx/sites-enabled/default
 chmod 644 /etc/nginx/nginx.conf
-su -l nginx
+su -c 'service nginx start' nginx
 service nginx start
