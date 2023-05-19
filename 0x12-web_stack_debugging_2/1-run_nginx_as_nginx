@@ -2,4 +2,4 @@
 # Runs nginx as less priviledged user nginx
 chmod 644 /etc/nginx/nginx.conf
 su -l nginx
-service nginx restart
+service nginx start
