@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Runs nginx as less priviledged user nginx
-
 chmod 644 /etc/nginx/nginx.conf
-su -c 'service nginx restart' nginx
+su -l nginx
+service nginx restart
