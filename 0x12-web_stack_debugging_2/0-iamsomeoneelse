@@ -2,4 +2,4 @@
 # Script runs command as another user
 
 USER1=$1
-su "$USER1" -c 'whoami'
+su "$USER1" -s /bin/bash -c whoami
