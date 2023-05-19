@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # Runs nginx as less priviledged user nginx
+passwd -l root
 chmod 644 /etc/nginx/nginx.conf
 su -l nginx
 service nginx start
