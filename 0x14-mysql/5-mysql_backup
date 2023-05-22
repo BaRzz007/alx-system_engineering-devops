@@ -3,4 +3,4 @@
 passwd=$1
 archive="$(date +'%d-%m-%Y'.tar.gz)"
 sudo mysqldump -p"$passwd" --all-databases > backup.sql
-tar -cfz "$archive" backup.sql 
+tar -czf "$archive" backup.sql 
