@@ -9,7 +9,7 @@ def top_ten(subreddit):
     try:
         resp = requests.get(
             url=f'{base_url}/r/{subreddit}/hot.json?limit=10',
-            headers={"User-Agent": "myPyscript"},
+            headers={"User-Agent": "FizzBarzzPyscript"},
             allow_redirects=False)
 
         data = resp.json()
