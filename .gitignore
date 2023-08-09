@@ -2,3 +2,4 @@ school
 school.pub
 db_dump.sql
 automate.py
+__pycache__
