@@ -38,6 +38,12 @@ backend backend-servers
 	server web-01 18.206.192.187:80 check
 	server web-02 100.26.53.46:80 check
 
+backend letsencrypt-backend
+	# configure letsencrypt server to listen on another port
+	# so we don't have to stop our running server while creating a new
+	# certificate
+	server letsencrypt 127.0.0.1:8888
+
 frontend http
 	bind *:80
 	bind *:443 ssl crt /etc/ssl/thelevites.tech/thelevites.tech.pem alpn h2
@@ -45,5 +51,10 @@ frontend http
 	redirect scheme https code 301 if !{ ssl_fc }
 
 	acl index path_beg /
+
+	# Test for letsencrypt request
+	acl letsencrypt-acl path_beg /.well-known/acme-challenge/
+	use_backend letsencrypt-backend if letsencrypt-acl
+
 	default_backend backend-servers
 
