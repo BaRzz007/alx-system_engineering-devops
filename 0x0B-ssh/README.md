@@ -1,5 +1,0 @@
-# SSH
-
-## Learning Objective
-
-## Resources

@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-# Script runs command as another user
-
-USER1=$1
-su "$USER1" -s /bin/bash -c whoami
